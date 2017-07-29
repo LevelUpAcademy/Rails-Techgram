@@ -1,24 +1,9 @@
-# README
+# TECHGRAM
+Rede social de fotos criada pelos alunos do curso de Ruby on Rails da Level.Up academy.
+Este projeto foi criado a fins academicos, para exemplificar a criação de modelos, controladores, rotas, views e outras tecnicas do Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Notas importantes
+* Para atualizar o pdf de entidades do banco utilize "bundle exec erd"
+* Antes de executar o projeto, execute bundle install e rails db:migrate
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
