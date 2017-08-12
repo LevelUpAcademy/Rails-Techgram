@@ -1,0 +1,7 @@
+<h1>Novo post</h1>
+<p><%= @notice %></p>
+<%= form_for @post, url: posts_create_path do |f| %>
+  <%= f.file_field :post_image, multiple: false %>
+  <%= f.text_area "description" %>
+  <%= f.submit "Salvar" %>
+<% end %>

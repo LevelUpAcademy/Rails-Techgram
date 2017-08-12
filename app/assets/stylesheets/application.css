@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+   font-family:'arial';
+ }
+
+ .login {
+     background-color: #fbfbfb;
+     width: 30%;
+     min-height: 400px;
+     margin: 0 auto;
+     padding: 10px 30px;
+     color: #555555;
+     margin-top: 50px;
+     border-radius: 5px;
+     box-shadow: 3px 2px 19px #e1dfdf;
+ }
+
+ .login h2{
+   text-transform: uppercase;
+   color: #3e3d3d;
+ }
+
+ .login .field{
+   font-size: 22px;
+   margin-top: 25px;
+   text-align: left;
+ }
+
+  .login .field input[type="email"],
+  .login .field input[type="password"]{
+    padding:5px 10px;
+    color: #55555;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  .login .actions input[type="submit"]{
+    padding:10px 25px;
+    background-color: #276be7;
+    color: white;
+    border: none;
+    border-radius:10px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }

@@ -1,0 +1,17 @@
+Adicione a gem:
+gem 'carrierwave', '~> 1.0'
+bundle install
+
+Gere o "uploader":
+rails generate uploader PostImage
+(create  app/uploaders/post_image_uploader.rb)
+
+Adicione o uploader a sua model:
+rails g migration add_post_image_to_posts post_image:string
+rails db:migrate
+
+Adicione o uploader a classe da sua model:
+mount_uploader :post_image, PostImageUploader
+
+Adicione esta linha no arquivo config/environment.rb:
+require 'carrierwave/orm/activerecord'
