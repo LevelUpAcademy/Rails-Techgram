@@ -9,6 +9,23 @@
   </head>
 
   <body>
-    <%= yield %>
+      <div class="header">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h1><a class="logo" href="/">Techgram</a></h1>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <input type="search" class="form-control search" placeholder="Buscar...">
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="/posts/new" class="btn pull-right">Novo post</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <%= yield %>
+      </div>
+
   </body>
 </html>
