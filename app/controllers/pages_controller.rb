@@ -6,4 +6,8 @@ class PagesController < ApplicationController
   def post
   end
 
+  def me
+    
+  end
+
 end
