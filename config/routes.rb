@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  get 'likes/create'
+
   get 'posts/new'
   post 'posts/create'
+
+  post 'likes/create' => 'likes#create'
 
   get 'pages/home'
   get 'pages/post'

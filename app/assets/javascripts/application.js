@@ -17,14 +17,28 @@
 //= require_tree .
 
 $(document).ready(function(){
+
   $(".post").dblclick(function() {
-    alert( "Double click" );
+    var post = {
+      url: "/likes/create",
+      method: "POST",
+      data: {
+        id_post: $(this).attr("idpost")
+      }
+    }
+    $.ajax(post).then(function(data){
+      $("div[idpost=" + data.id_post + "] .likes b").html((parseInt($("div[idpost=" + data.id_post + "] .likes b").html().split(" ")[0]) + 1) + " likes")
+    })
   });
+
+
+
+
+
 
   $('#search_box').keyup(function(event){
     if (event.keyCode === 13) {
         window.location.href = '/pages/search_results/' + $(this).val()
     }
-
   })
 })
