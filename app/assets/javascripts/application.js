@@ -20,4 +20,11 @@ $(document).ready(function(){
   $(".post").dblclick(function() {
     alert( "Double click" );
   });
+
+  $('#search_box').keyup(function(event){
+    if (event.keyCode === 13) {
+        window.location.href = '/pages/search_results/' + $(this).val()
+    }
+
+  })
 })

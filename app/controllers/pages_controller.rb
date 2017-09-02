@@ -7,7 +7,12 @@ class PagesController < ApplicationController
   end
 
   def me
-    
+
+  end
+
+  def search_results
+    search_text = params[:q]
+    @posts = Post.where('description LIKE ?', "%#{search_text}%")
   end
 
 end

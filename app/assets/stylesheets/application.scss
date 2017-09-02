@@ -81,8 +81,12 @@
     margin-top:25px;
   }
 
-  .post img{
+  img{
     width:100%;
+  }
+
+  .small img {
+    max-height: 160px;
   }
 
   .post .comment{
